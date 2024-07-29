@@ -64,7 +64,7 @@ if (
             <label class="form-label">نیم سال جاری</label>
             <input type="text" class="form-control" value="<?= $setting['current_semester'] ?>" name="current_semester">
           </div>
-          <button type="submit" class="btn btn-danger">
+          <button type="submit" class="btn btn-success">
             آپدیت</button>
         </form>
       </div>

@@ -46,7 +46,7 @@ if (
           <?php } ?>
 
           <div class="table-responsive">
-            <table class="table table-bordered mt-3 n-table text-white ">
+            <table class="table table-bordered mt-3 n-table text-white border-info ">
               <thead>
                 <tr>
                   <th scope="col">#</th>

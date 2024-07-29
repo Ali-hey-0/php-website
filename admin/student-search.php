@@ -93,7 +93,7 @@ if (
                         }
                         ?>
                       </td>
-                      <td>
+                      <td class="d-flex justify-content-around" >
                         <a href="student-edit.php?student_id=<?= $student['student_id'] ?>" class="btn btn-warning">تغییر</a>
                         <a href="student-delete.php?student_id=<?= $student['student_id'] ?>" class="btn btn-danger">حذف</a>
                       </td>

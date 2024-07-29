@@ -29,6 +29,7 @@ if (
       <link rel="icon" href="../logo.png">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../css/teacger-index.css">
     </head>
 
     <body>
@@ -37,27 +38,27 @@ if (
 
       if ($teacher != 0) {
       ?>
-        <div class="container mt-5">
-          <div class="card" style="width: 22rem;">
+        <div class="container mt-5 teacger-index ">
+          <div class="card bg-dark" style="width: 22rem;">
             <img src="../img/teacher-<?= $teacher['gender'] ?>.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">@<?= $teacher['username'] ?></h5>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title bg-dark text-white text-center">@<?= $teacher['username'] ?></h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">نام : <?= $teacher['fname'] ?></li>
-              <li class="list-group-item"> نام خانوادگی : <?= $teacher['lname'] ?></li>
-              <li class="list-group-item">نام کاربری : <?= $teacher['username'] ?></li>
+            <ul class="list-group list-group-flush bg-dark text-white">
+              <li class="list-group-item bg-dark text-white">نام : <?= $teacher['fname'] ?></li>
+              <li class="list-group-item bg-dark text-white "> نام خانوادگی : <?= $teacher['lname'] ?></li>
+              <li class="list-group-item bg-dark text-white ">نام کاربری : <?= $teacher['username'] ?></li>
 
-              <li class="list-group-item">شماره کارمندی : <?= $teacher['employee_number'] ?></li>
-              <li class="list-group-item">آدرس : <?= $teacher['address'] ?></li>
-              <li class="list-group-item">تاریخ تولد: <?= $teacher['date_of_birth'] ?></li>
-              <li class="list-group-item">شماره موبایل: <?= $teacher['phone_number'] ?></li>
-              <li class="list-group-item">صلاحیت: <?= $teacher['qualification'] ?></li>
-              <li class="list-group-item">آدرس ایمیل : <?= $teacher['email_address'] ?></li>
-              <li class="list-group-item">جنسیت : <?= $teacher['gender'] ?></li>
-              <li class="list-group-item">تاریخ پیوستن : <?= $teacher['date_of_joined'] ?></li>
+              <li class="list-group-item bg-dark text-white ">شماره کارمندی : <?= $teacher['employee_number'] ?></li>
+              <li class="list-group-item bg-dark text-white ">آدرس : <?= $teacher['address'] ?></li>
+              <li class="list-group-item bg-dark text-white ">تاریخ تولد: <?= $teacher['date_of_birth'] ?></li>
+              <li class="list-group-item bg-dark text-white ">شماره موبایل: <?= $teacher['phone_number'] ?></li>
+              <li class="list-group-item bg-dark text-white ">صلاحیت: <?= $teacher['qualification'] ?></li>
+              <li class="list-group-item bg-dark text-white ">آدرس ایمیل : <?= $teacher['email_address'] ?></li>
+              <li class="list-group-item bg-dark text-white ">جنسیت : <?= $teacher['gender'] ?></li>
+              <li class="list-group-item bg-dark text-white ">تاریخ پیوستن : <?= $teacher['date_of_joined'] ?></li>
 
-              <li class="list-group-item">عنوان :
+              <li class="list-group-item bg-dark text-white ">عنوان :
                 <?php
                 $s = '';
                 $subjects = str_split(trim($teacher['subjects']));
@@ -69,7 +70,7 @@ if (
                 echo $s;
                 ?>
               </li>
-              <li class="list-group-item">کلاس:
+              <li class="list-group-item bg-dark text-white ">کلاس:
                 <?php
                 $c = '';
                 $classes = str_split(trim($teacher['class']));

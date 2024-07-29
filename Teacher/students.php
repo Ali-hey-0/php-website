@@ -28,17 +28,18 @@ if (
       <link rel="icon" href="../logo.png">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../css/teacher-student.css">
     </head>
 
-    <body>
+    <body id="teacher-student">
       <?php
       include "inc/navbar.php";
       if ($classes != 0) {
       ?>
-        <div class="container mt-5">
+        <div class="container mt-5 ">
 
           <div class="table-responsive">
-            <table class="table table-bordered mt-3 n-table">
+            <table class="table table-bordered mt-3 n-table bg-dark text-white">
               <thead>
                 <tr>
                   <th scope="col">#</th>
